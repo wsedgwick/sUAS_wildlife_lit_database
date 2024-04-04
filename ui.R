@@ -3,8 +3,10 @@
 ui <- navbarPage("sUAS Wildlife Literature Database",
                  tabPanel("About",
                           h2("About This Database"),
-                          p("This database was designed to allow researchers, biologists and conservationists to easily search for articles related to wildlife research, management and conservation using drones. The information was aggregated together by Rick Spaulding and the Shiny App was built by Wade Sedgwick."),
-                          p("To use this database, go to the 'Search' bar. Articles can be filtered by Year, on the left, or can be searched by keyword or by their title. The user can easily copy, print, download an excel spreadsheet, or print a PDF of the articles visible. Articles per page length can also be adjusted at the top.")
+                          p("This database was designed to allow researchers, biologists and conservationists to easily search for articles related to drone-based wildlife research, management and conservation. The information was aggregated by Rick Spaulding and the Shiny App was built by Wade Sedgwick."),
+                          p("To use this database, go to the 'Search' page at the top. Users can search for articles at the top right, and can also search by year published. The user can easily copy, print or download an excel spreadsheet. Articles per page length can also be adjusted at the top."),
+                          p("Users can also look at basic statistics of the database. Go to the 'Stats' page, and the user can visualize the groups and families most often surveyed using drones, or which drone platforms are used most often."),
+                          p("Information in this database includes: Author, Year Published, Title, Journal/Report/Book/Conference, Group, Family, and Species, Keywords, Citation, sUAS Platform, sUAS Model, and Sensors used. Not all information is complete.")
                  ),
                  tabPanel("Search",
                           mainPanel(

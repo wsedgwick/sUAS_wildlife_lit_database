@@ -42,9 +42,15 @@ server <- function(input, output, session) {
       autoWidth = TRUE,
       scrollX = TRUE,
       dom = 'Blrftip',
-      buttons = c('copy', 'csv', 'excel', 'pdf', 'print'),
+      buttons = c('copy', 'csv', 'excel'),
       lengthMenu = list(c(5, 10, 20, 50, -1), c('5', '10', '20', '50', 'All')),
-      pageLength = 20
+      pageLength = 20,
+      columnDefs = list(
+        list(width = '400px', targets = which(colnames(df) == "Title")),
+        list(width = '200px', targets = which(colnames(df) == "Authors")),
+        list(width = '150px', targets = which(colnames(df) == "Keywords")),
+        list(width = '200px', targets = which(colnames(df) == "Species")),
+        list(width = '200px', targets = which(colnames(df) == "Sensors")))
     ))
   })
   
